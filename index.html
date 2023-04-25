@@ -6,11 +6,11 @@
 <body>
   <h1>Generate Password</h1>
   <form action="/generate" method="GET">
-    <input type="number" id="length" name="length" placeholder="Password Length" value="16" readonly>
-    <input type="checkbox" id="uppercase" name="uppercase" value="on" checked> Uppercase
-    <input type="checkbox" id="lowercase" name="lowercase" value="on" checked> Lowercase
-    <input type="checkbox" id="numbers" name="numbers" value="on" checked> Numbers
-    <input type="checkbox" id="symbols" name="symbols" value="on" checked> Symbols
+    <input type="hidden" id="length" name="length" value="16">
+    <input type="hidden" id="uppercase" name="uppercase" value="on">
+    <input type="hidden" id="lowercase" name="lowercase" value="on">
+    <input type="hidden" id="numbers" name="numbers" value="on">
+    <input type="hidden" id="symbols" name="symbols" value="on">
     <input type="submit" value="Generate">
   </form>
   <div id="password"></div>
